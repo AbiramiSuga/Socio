@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}" >
+</head>
+<header>
+  <img src="{% static 'svg/socio.svg' %}">
+</header>
+<body>
+  <h1> Start here✌🏻</h1>
+  <style>
+    /* Style The Dropdown Button */
+    .dropbtn {
+      background-color: white;
+      color: black;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius:10px;
+      width:160px;
+      border:2px solid black;
+    }
+    
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-left:90%;
+     border-radius:5px;
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+     border-radius:5px;
+      z-index: 1;
+      border:1px solid black;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding-left:50px;
+      padding-bottom:10px;
+      padding-top:10px;
+      text-decoration: none;
+      display: block;
+      align-content: center;
+      border-radius:5px;
+      /* margin-left:40px;
+      margin-right:40px; */
+    }
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color:rgb(236, 225, 225);}
+    
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+      background-color: yellow;
+    }
+    /* hr{
+      border:0.5px solid black;
+    } */
+    </style>
+    
+    
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="{% url 'profile' %}">Profile</a> 
+        <hr>
+        <a href="{% url 'Request' %}">Request</a>
+      <hr>
+      <a href="{% url 'logout' %}">Logout</a>
+      </div>
+    </div>
+
+    
+     {% for x in d %} 
+     {% for y in d1 %}
+     {% if x.u_id == y.reqreceiver_id_id %} 
+     <div class="frndlist">
+    <br>
+     <a href="{% url 'chat' x.u_id %}"><img class="icon" src="{{x.pic.url}}" width="60" height="60"></a>
+     <a class="name" href="{% url 'chat' x.u_id %}">{{x.u_name}}</a>
+     <br>
+     <br>
+    </div> 
+    <br>
+    <br>   
+     {% endif %}
+     {% endfor %}
+   {% endfor %}
+    
+  
+</body>
+</html>
+

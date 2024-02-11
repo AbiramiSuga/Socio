@@ -1,0 +1,67 @@
+header {
+    margin-top: 1rem; 
+    margin-top: -1rem;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+    background-color:#7CB9E8 ;
+    padding-left: 80px;  
+    height: fit-content;
+}
+h1{
+    padding-top: 2rem;
+    padding-left:5rem;
+    padding-bottom:-10rem;
+    width: fit-content;
+    height: fit-content;
+}
+header img{ 
+    height:100px;
+    width: 140px;
+} 
+
+.pp img{
+    position:absolute;
+    left:20rem;
+    top:270px;
+}
+body .info{
+    padding:20px;
+    font-size:20px;
+    width:30%;
+    position:absolute;
+    top:230px;
+    margin-left:20%;
+    left:30%;
+    border:2px solid black;
+    border-radius:10px;
+    margin-top:10px;
+    padding-left:30px;
+    align-content:space-around;
+    
+}
+
+
+a:link, a:visited { 
+   
+    color:black; /*to change the color of the link give color:(any color) */
+    padding: 14px 25px;
+    /* text-align: center; */
+    text-decoration: none;
+    display: inline-block;
+    border-radius:10px;
+    border:2px solid black;
+    margin-left:90%;
+    margin-top:-40%;
+    background-color:none;
+  }
+  
+  a:hover, a:active {
+    background-color:yellow;
+  }
+
+  h1{
+    margin-left:5%;
+  }
+
+  
+  /* a:link-normal, unvisited link, a:visited-link the user has visited, a:hover:link when the user mouses over it, a:active-a link the moment it is clicked */

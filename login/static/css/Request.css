@@ -1,0 +1,161 @@
+header {
+    margin-top: 1rem; 
+    margin-top: -1rem;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+    background-color:#7CB9E8 ;
+    padding-left: 80px;  
+    height: fit-content;
+}
+
+header img{ 
+    height:100px;
+    width: 140px;
+} 
+
+h1{
+    padding-top: 2rem;
+    padding-left:5rem;
+    padding-bottom:-10rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.userlist{
+    width: 275px;
+    margin-left:60%;
+    
+    margin-top:-5px;
+    
+margin-bottom:10px;
+
+}
+
+
+.userlist a {
+   
+    display:block;
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top:2px;
+    
+    text-align: center; 
+    border:2px solid purple;
+    height:50px;
+    border-radius:10px;
+    width:375px;
+  }
+
+
+.userlist a:hover {
+    background-color:gold;
+  }
+  
+  
+  .userlist a.active {
+    background-color: #eaf2ef;
+  }
+  .homebut a:link, a:visited { 
+   
+    color:black; /*to change the color of the link give color:(any color) */
+    padding: 14px 25px;
+    /* text-align: center; */
+    text-decoration: none;
+    display: inline-block;
+    border-radius:10px;
+    border:2px solid black;
+    margin-left:90%;
+    margin-top:-40%;
+    background-color:none;
+  }
+  
+  .homebut a:hover, a:active {
+    background-color:yellow;
+  }
+
+
+ .list2{
+  margin-top:-38%;
+  margin-left:10%;
+  border:2px solid black;
+  border-radius:10px;
+  padding-left:30%;
+  width:400px;
+  text-align:justify;
+  padding:10px;
+ }
+
+ .list2 a{
+  display:block;
+  color:black;
+  text-decoration: none;
+  font-size: 20px;
+  /* padding-bottom: 1rem; */
+  }
+ .unam{
+  margin-left:10px;
+  width: fit-content;
+  height: fit-content;
+  padding-top: 1rem;
+ }
+
+ .accept{
+  margin-left:130px;
+  margin-top:-45px;
+  border:2px solid black;
+  border-radius:5px;
+  width:80px;
+  text-align:center;
+  height:30px;
+ }
+
+ .decline{
+  margin-left:250px;
+  margin-top:-8.5%;
+  border:2px solid black;
+  border-radius:5px;
+  width:80px;
+  text-align:center;
+  height:30px;
+ }
+
+ .Uname{
+  margin-left:10px;
+ 
+ }
+
+ .Req{
+  margin-left:250px;
+  margin-top:-40px;
+  border:1px solid black;
+  border-radius:5px;
+  width:80px;
+  
+  height:30px;
+ }
+
+ .accpt{
+  margin-left:250px;
+  margin-top:-40px;
+  border:1px solid black;
+  border-radius:5px;
+  width:80px;
+  text-align:center;
+  height:30px;
+  margin-bottom:10px;
+ }
+
+ .dec{
+  margin-left:250px;
+  margin-top:-40px;
+  border:1px solid black;
+  border-radius:5px;
+  width:80px;
+text-align:center;
+  height:30px;
+ }
+.body{
+  margin-bottom:20px;
+}
+

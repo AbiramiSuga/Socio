@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title>Chat</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/chat.css' %}" >
+</head>
+<header>
+  <img src="{% static 'svg/socio.svg' %}">
+</header>
+<body>    
+    <div class="homebut"><a href="{% url 'home' %}">Back to home</a><br><br></div>
+    <div class="name"><a href="{% url 'pro1' u_id %}">{{name}}</a></div>
+   <div class="prof"><img src="{{pic.url}}" width="50" height="50"></div>
+    <textarea rows = "5" cols = "60" name = "ansBox" class="ansWriteBox" placeholder="Message..."></textarea>
+    <input type="submit" class="bt"  value="Send">
+</body>
+</html>

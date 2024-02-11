@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+   
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/log1.css' %}" >
+   
+   
+    <header>
+            <img src="{% static 'svg/socio.svg' %}">
+    </header>
+    <div class="message">
+      <h1> Happy to have you here😇</h1>
+    </div>
+    
+<body>
+  <div class="image"> 
+    <img src="{% static 'svg/login.svg' %}" >
+  </div>
+  <div class="form"> 
+    
+    <form action="verify/"  method="POST">
+      {% csrf_token %}
+        
+        <div class="mail">
+          <label>Mail Id</label><br>
+        </div>
+        <input type="mail" id="email" name="email" ><br><br>
+        <label >Password</label><br>
+        <input type="password" id="pw" name="pw" ><br><br>
+     
+        <div class="sub_button">
+          <input type="submit" value="Submit">
+        </div>
+        <button><a href="{% url 'registration' %}">NewBie? Click here</a></button>
+
+        
+    </form> 
+  </div>
+
+</body>
+</html>
+

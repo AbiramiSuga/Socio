@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+ {% load static %}   
+<body>
+<head><link rel="stylesheet" type="text/css" href="{% static 'css/registration.css' %}" ></head>
+<div class="header" style="margin-top: 1rem; 
+    margin-top: -1rem;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+    background-color:#7CB9E8 ;
+    padding-left: 80px;  
+    height: fit-content;">
+
+<div class="logo" style="padding:1px;padding-left:0.5px;">
+  <img src="{% static 'svg/socio.svg' %}" style="height:100px;width:140px;">
+</div>
+</div>
+  
+ <h1 style="padding-top: 2rem;
+ padding-left:55%;
+ "> Let's start the journey! Register here😎</h1>
+
+<div class="image" style="padding-left:10px;height:50px;padding-top:2 rem;">
+  <img src="{% static 'svg/registration.svg' %}" style="padding-left:200px;height:550px;">
+</div>
+
+<div class="form" style="padding-left:57%;
+font-family:'Times New Roman', Times, serif;
+font-size:20px;
+width:max-content;
+position:absolute;
+top:230px;
+bottom:50px;
+padding-bottom:30%;
+margin-bottom:30%">
+<form action="" method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" value="Submit" style=" padding:10px;
+      font-size:17px;
+      border:1px solid black;
+      border-radius:25px;
+      width:150px;
+      background-color:yellow;">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
+

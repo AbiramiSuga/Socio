@@ -1,0 +1,15 @@
+.myfieldclass{
+border:2px solid black;
+padding:9px;
+    padding-right:-5rem;
+    padding-left:20px;
+    width: 15rem;
+    /* border:1px solid black; */
+    border-radius:10px;
+    margin-left:40%;
+    align-items: center;
+    
+}
+.form{
+    margin-bottom:20%;
+}

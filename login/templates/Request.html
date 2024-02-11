@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/Request.css' %}" >
+</head>
+<header>
+  <img src="{% static 'svg/socio.svg' %}">
+</header>
+<body>
+  <h1> Connect here 🤝</h1>     
+  <div class="homebut"><a href="{% url 'home' %}" >Back to home</a><br><br></div>
+  <!-- <input type="text" id="demo" placeholder="search here" onclick="ddactive();"> -->
+  <div class="sea">
+        
+  </div>  
+  <div class="userlist">
+    {% for x in d %}
+    <a href="{% url 'pro1' x.u_id %}">{{x.u_name}}</a>
+    
+  {% endfor %}
+  </div> 
+  <div class="list2"> 
+  <h2>Requests received for you!</h2>
+    {% for x in d %}
+      {% for y in d1 %}
+        {% if x.u_id == y.reqsender_id_id %}
+        <div class="unam"><a href="{% url 'pro1' x.u_id %}">{{x.u_name}}</a><br></div>
+        <div class="accept"><a href="{% url 'acc' y.id %}">Accept</a><br><br></div>
+        <div class="decline"><a href="{% url 'dec' y.id %}">Decline</a></div>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+
+  <h2>Status of your requests:</h2>
+    {% for x in d %}
+      {% for z in d2 %}
+        {% if x.u_id == z.reqreceiver_id_id %}
+          <div class="Uname"><h4>{{x.u_name}}</h4></div>
+          {% if z.req_status == 0 %} 
+          <div class="Req"><h5 style="margin-top:8px;margin-left:9px;">Requested</h5></div>
+          {% endif %}
+          {% if z.req_status == 1 %} 
+          <div class="accpt"><h5 style="margin-top:8px;margin-left:3px;">Accepted</h5></div>
+          {% endif %}
+          {% if z.req_status == -1 %} 
+          <div class="dec"><h5 style="margin-top:8px;margin-left:9px;">Declined</h5></div>
+          {% endif %}
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+
+</div>
+
+</body>
+</html>
+

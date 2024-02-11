@@ -1,0 +1,52 @@
+header {
+    margin-top: 1rem; 
+    margin-top: -1rem;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+    background-color:#7CB9E8 ;
+    padding-left: 80px;  
+    height: fit-content;
+}
+h1{
+    padding-top: 5rem;
+    padding-left:5rem;
+    padding-bottom:-10rem;
+    width: fit-content;
+    height: fit-content;
+}
+header img{ 
+    height:100px;
+    width: 140px;
+} 
+
+
+
+
+
+.frndlist .name{
+    font-weight: 500;
+    font-size: x-large;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    position: absolute;
+    color: black;
+ 
+    
+
+}
+
+.frndlist{
+    /* left: 5rem; */
+    margin-left: 15rem;
+    padding-left: 4.5rem;
+    flex: content;
+    background-color: #d6e8f0;
+    align-items: center;
+    max-width: 40rem;
+    border-style: groove;
+    border-radius: 50px;
+}
+
+
